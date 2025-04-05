@@ -67,33 +67,33 @@ public class HomeWork3 {
 //			}
 //		} sc.close();
 //////////Q3.
-		Scanner sc = new Scanner(System.in);
-		System.out.println("阿文選個不要的數吧");
-		int numberUnwanted = sc.nextInt(); // 取得輸入的數字
-		int count = 0;
-		int numberWanted[] = new int[50]; // 創建一個矩陣放入篩選後的數字
-		for (int i = 1; i <= 49; i++) {
-			if (i / 10 != numberUnwanted && i % 10 != numberUnwanted) {
-				System.out.print(i + " ");
-				numberWanted[i] = i;
-				count++;
-			}
-		}
-		sc.close();
-		System.out.println("總共" + count + "個號碼可選");
-//		從矩陣中隨機取出6個數字
-		int sixRandoms[] = new int[7]; // 創建一矩陣放入隨機提供的六個數字
-
-		outer: for (int i = 1; i <= 6; i++) {
-			int randIndex = (int) (Math.random() * numberWanted.length);
-			int numberPicked = numberWanted[randIndex];
-			// 用另一個迴圈篩選隨機產生的數字避免重複，有重複就重新一次迴圈
-			for (int j = 0; j < i; j++) {
-				if (sixRandoms[j] == numberPicked) {
-					continue outer;
-				}
-			}
-			System.out.println("昨天明牌報這支:" + numberPicked);
-		}
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("阿文選個不要的數吧");
+//		int numberUnwanted = sc.nextInt(); // 取得輸入的數字
+//		int count = 0;
+//		int numberWanted[] = new int[50]; // 創建一個矩陣放入篩選後的數字
+//		for (int i = 1; i <= 49; i++) {
+//			if (i / 10 != numberUnwanted && i % 10 != numberUnwanted) {
+//				System.out.print(i + " ");
+//				numberWanted[i] = i;
+//				count++;
+//			}
+//		}
+//		sc.close();
+//		System.out.println("總共" + count + "個號碼可選");
+////		從矩陣中隨機取出6個數字
+//		int sixRandoms[] = new int[7]; // 創建一矩陣放入隨機提供的六個數字
+//
+//		outer: for (int i = 1; i <= 6; i++) {
+//			int randIndex = (int) (Math.random() * numberWanted.length);
+//			int numberPicked = numberWanted[randIndex];
+//			// 用另一個迴圈篩選隨機產生的數字避免重複，有重複就重新一次迴圈
+//			for (int j = 0; j < i; j++) {
+//				if (sixRandoms[j] == numberPicked) {
+//					continue outer;
+//				}
+//			}
+//			System.out.println("昨天明牌報這支:" + numberPicked);
+//		}
 	}
 }
