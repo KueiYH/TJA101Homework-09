@@ -33,7 +33,7 @@ public class HomeWork1 {
 		double principal = 1500000;
 		double interest = 0.02;
 		for (int i = 0; i <= 10; i ++) {
-			principal = principal * (1 + 0.02);
+			principal = principal * (1 + interest);
 		}
 		double sum = principal;
 		
