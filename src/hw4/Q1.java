@@ -2,7 +2,6 @@ package hw4;
 
 public class Q1 {
 	public static void main(String[] args) {
-		System.out.println("Q1-1.");
 		int numbers[] = { 29, 100, 39, 41, 50, 8, 66, 77, 95, 15 };
 		int sum = 0;
 		double avg = 0;
@@ -17,6 +16,5 @@ public class Q1 {
 				System.out.print(" " + numbers[i]);
 			}
 		}
-		System.out.println();
 	}
 }
